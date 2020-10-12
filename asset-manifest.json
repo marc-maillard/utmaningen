@@ -1,23 +1,22 @@
 {
   "files": {
     "main.css": "/utmaningen/static/css/main.5f361e03.chunk.css",
-    "main.js": "/utmaningen/static/js/main.b4fc859f.chunk.js",
-    "main.js.map": "/utmaningen/static/js/main.b4fc859f.chunk.js.map",
+    "main.js": "/utmaningen/static/js/main.e8c69a69.chunk.js",
+    "main.js.map": "/utmaningen/static/js/main.e8c69a69.chunk.js.map",
     "runtime-main.js": "/utmaningen/static/js/runtime-main.1f355751.js",
     "runtime-main.js.map": "/utmaningen/static/js/runtime-main.1f355751.js.map",
-    "static/js/2.fedeb8d2.chunk.js": "/utmaningen/static/js/2.fedeb8d2.chunk.js",
-    "static/js/2.fedeb8d2.chunk.js.map": "/utmaningen/static/js/2.fedeb8d2.chunk.js.map",
+    "static/js/2.5c459a7c.chunk.js": "/utmaningen/static/js/2.5c459a7c.chunk.js",
+    "static/js/2.5c459a7c.chunk.js.map": "/utmaningen/static/js/2.5c459a7c.chunk.js.map",
     "index.html": "/utmaningen/index.html",
-    "precache-manifest.fd21e470cd6fd99a652d8d16b0d5a709.js": "/utmaningen/precache-manifest.fd21e470cd6fd99a652d8d16b0d5a709.js",
+    "precache-manifest.3123d3f814c5a8bb1a289b5852a04985.js": "/utmaningen/precache-manifest.3123d3f814c5a8bb1a289b5852a04985.js",
     "service-worker.js": "/utmaningen/service-worker.js",
     "static/css/main.5f361e03.chunk.css.map": "/utmaningen/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.fedeb8d2.chunk.js.LICENSE.txt": "/utmaningen/static/js/2.fedeb8d2.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/utmaningen/static/media/logo.5d5d9eef.svg"
+    "static/js/2.5c459a7c.chunk.js.LICENSE.txt": "/utmaningen/static/js/2.5c459a7c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.1f355751.js",
-    "static/js/2.fedeb8d2.chunk.js",
+    "static/js/2.5c459a7c.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.b4fc859f.chunk.js"
+    "static/js/main.e8c69a69.chunk.js"
   ]
 }
