@@ -1,9 +1,9 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 
 import { Box, Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { format } from "date-fns";
-import {sv} from "date-fns/locale"
+import { sv } from "date-fns/locale";
 import axios from "axios";
 
 import ChallengeCard from "./ChallengeCard";
@@ -21,14 +21,33 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+const SkelletonCards = () => {
+  return Array.from(new Array(10)).map((item, i) => <SkeletonCard key={i} />);
+};
+
+const ChallengeCards = ({ cardItems }) => {
+  return cardItems.map((cardItem) => (
+    <ChallengeCard
+      key={cardItem._id}
+      onClick={() => handleClick(cardItem._id)}
+      avatar={cardItem.shortTitle}
+      title={cardItem.title}
+      subheader={formatSubheader(cardItem)}
+    />
+  ));
+};
+
 function handleClick(itemKey) {
   console.log("item clicked ", itemKey);
 }
 
 function formatSubheader(cardItem) {
-  if (cardItem && cardItem.date_start && cardItem.date_end){
-    
-    return format(new Date(cardItem.date_start), 'PPP', {locale: sv}) + " - " + format(new Date(cardItem.date_end), 'PPP', {locale: sv});
+  if (cardItem && cardItem.date_start && cardItem.date_end) {
+    return (
+      format(new Date(cardItem.date_start), "PPP", { locale: sv }) +
+      " - " +
+      format(new Date(cardItem.date_end), "PPP", { locale: sv })
+    );
   }
   return "";
 }
@@ -41,7 +60,6 @@ function Boxngrids(props) {
 
   useEffect(() => {
     const fetchCardItems = async () => {
-
       const result = await axios(process.env.REACT_APP_API_URL + "challenges");
       setCardItems(result.data);
       setLoading(false);
@@ -53,14 +71,11 @@ function Boxngrids(props) {
     <React.Fragment>
       <Box mx={3} mt={3}>
         <Grid container direction={"column"} spacing={2}>
-          {loading? <React.Fragment><SkeletonCard/><SkeletonCard/><SkeletonCard/></React.Fragment> : cardItems.map((cardItem) => (
-            <ChallengeCard
-            key={cardItem._id}
-            onClick={() => handleClick(cardItem._id)}
-            avatar={cardItem.shortTitle}
-            title={cardItem.title}
-            subheader= {formatSubheader(cardItem)} />
-          ))}
+          {loading ? (
+            <SkelletonCards />
+          ) : (
+            <ChallengeCards cardItems={cardItems} />
+          )}
         </Grid>
       </Box>
       <FabAddButton className={classes.Fab} />
