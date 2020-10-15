@@ -6,7 +6,7 @@ import { MuiThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 
 import { Box } from "@material-ui/core";
-import ButtonAppBar from "./components/nav_bar/ButtonAppBar";
+import NavBar from "./components/nav_bar";
 import Routes from "./components/Routes";
 import { useTheme } from "@material-ui/core/styles";
 
@@ -17,7 +17,7 @@ function App() {
       <MuiThemeProvider theme={Utmaningentheme}>
         <CssBaseline />
         <Box>
-          <ButtonAppBar theme={theme} />
+          <NavBar theme={theme} />
           <Routes />
         </Box>
       </MuiThemeProvider>

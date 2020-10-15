@@ -1,0 +1,206 @@
+{
+    "source": "mockoon:1.10.0",
+    "data": [
+        {
+            "type": "environment",
+            "item": {
+                "uuid": "",
+                "name": "Example",
+                "endpointPrefix": "",
+                "latency": 0,
+                "port": 4000,
+                "routes": [
+                    {
+                        "uuid": "",
+                        "documentation": "",
+                        "method": "get",
+                        "endpoint": "user",
+                        "responses": [
+                            {
+                                "uuid": "",
+                                "statusCode": 200,
+                                "label": "",
+                                "latency": 0,
+                                "filePath": "C:\\Projects\\utmaningen\\MockFiles\\getAllUsers.json",
+                                "sendFileAsBody": true,
+                                "headers": [
+                                    {
+                                        "uuid": "f369a3c3-5459-11e9-870e-b383922fae3b",
+                                        "key": "Content-Type",
+                                        "value": "text/plain"
+                                    }
+                                ],
+                                "body": "",
+                                "rules": [],
+                                "disableTemplating": false,
+                                "rulesOperator": "OR"
+                            }
+                        ],
+                        "enabled": true
+                    },
+                    {
+                        "uuid": "",
+                        "documentation": "",
+                        "method": "post",
+                        "endpoint": "dolphins",
+                        "responses": [
+                            {
+                                "uuid": "",
+                                "statusCode": 200,
+                                "label": "",
+                                "latency": 0,
+                                "filePath": "",
+                                "sendFileAsBody": false,
+                                "headers": [
+                                    {
+                                        "uuid": "f369a3c5-5459-11e9-870e-b383922fae3b",
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    }
+                                ],
+                                "body": "{\n    \"response\": \"So Long, and Thanks for All the Fish\"\n}",
+                                "rules": [],
+                                "disableTemplating": false,
+                                "rulesOperator": "OR"
+                            }
+                        ],
+                        "enabled": true
+                    },
+                    {
+                        "uuid": "",
+                        "documentation": "",
+                        "method": "get",
+                        "endpoint": "user/name/janne",
+                        "responses": [
+                            {
+                                "uuid": "",
+                                "statusCode": 200,
+                                "label": "",
+                                "latency": 0,
+                                "filePath": "C:\\Projects\\utmaningen\\MockFiles\\getJanne.json",
+                                "sendFileAsBody": true,
+                                "headers": [
+                                    {
+                                        "uuid": "003201c1-5468-11e9-870e-b383922fae3b",
+                                        "key": "",
+                                        "value": ""
+                                    }
+                                ],
+                                "body": "",
+                                "rules": [],
+                                "disableTemplating": false,
+                                "rulesOperator": "OR"
+                            }
+                        ],
+                        "enabled": true
+                    }
+                ],
+                "modifiedAt": "2020-10-15T14:35:42.108Z",
+                "proxyMode": false,
+                "proxyHost": "",
+                "https": false,
+                "cors": true,
+                "headers": [
+                    {
+                        "uuid": "f369a3c1-5459-11e9-870e-b383922fae3b",
+                        "key": "",
+                        "value": ""
+                    },
+                    {
+                        "uuid": "d3ceca60-545c-11e9-870e-b383922fae3b",
+                        "key": "Access-Control-Allow-Origin",
+                        "value": "*"
+                    },
+                    {
+                        "uuid": "d3ceca61-545c-11e9-870e-b383922fae3b",
+                        "key": "Access-Control-Allow-Methods",
+                        "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+                    },
+                    {
+                        "uuid": "d3ceca62-545c-11e9-870e-b383922fae3b",
+                        "key": "Access-Control-Allow-Headers",
+                        "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+                    }
+                ],
+                "lastMigration": 12,
+                "proxyReqHeaders": [
+                    {
+                        "key": "",
+                        "value": ""
+                    }
+                ],
+                "proxyResHeaders": [
+                    {
+                        "key": "",
+                        "value": ""
+                    }
+                ]
+            }
+        },
+        {
+            "type": "environment",
+            "item": {
+                "uuid": "",
+                "name": "utmaningen",
+                "endpointPrefix": "utmaningen",
+                "latency": 1000,
+                "port": 5000,
+                "routes": [
+                    {
+                        "uuid": "",
+                        "documentation": "",
+                        "method": "get",
+                        "endpoint": "challenges",
+                        "responses": [
+                            {
+                                "uuid": "",
+                                "statusCode": 200,
+                                "label": "",
+                                "latency": 0,
+                                "filePath": "",
+                                "sendFileAsBody": false,
+                                "headers": [
+                                    {
+                                        "uuid": "bb54f103-0ef3-11eb-bcdc-d1372e51e654",
+                                        "key": "Access-Control-Allow-Origin",
+                                        "value": "*"
+                                    }
+                                ],
+                                "body": "[\r\n  {\r\n    \"_id\":\"fdasdffsj342hjkh\",\r\n    \"shortTitle\":\"MA\",\r\n    \"title\":\"Marc och Anna sept-okt 2020\",\r\n    \"date_start\":\"2020-09-14\",\r\n    \"date_end\":\"2020-10-31\"\r\n  },\r\n  {\r\n    \"_id\":\"fdasdffsj34hjfkds43\",\r\n    \"shortTitle\":\"MB\",\r\n    \"title\":\"jkl fkdljk fldj lj j\",\r\n    \"date_start\":\"2020-10-14\",\r\n    \"date_end\":\"2020-11-31\"\r\n  },\r\n  {\r\n    \"_id\":\"fdasdffsjfkld54354jk\",\r\n    \"shortTitle\":\"MF\",\r\n    \"title\":\" jkldfs alkj fkldsj fjsdy\",\r\n    \"date_start\":\"2020-11-14\",\r\n    \"date_end\":\"2020-12-31\"\r\n  },\r\n  {\r\n    \"_id\":\"fdasdffsj3jkljsdkl234j\",\r\n    \"shortTitle\":\"MC\",\r\n    \"title\":\"ureiowru oewifdfhjsfd\",\r\n    \"date_start\":\"2021-09-14\",\r\n    \"date_end\":\"2021-10-31\"\r\n  },\r\n  {\r\n    \"_id\":\"fdasdffsj3nvmcx789fhjk\",\r\n    \"shortTitle\":\"MN\",\r\n    \"title\":\"vnfdjskafyul jdshfhuyf fhfjfkl\",\r\n    \"date_start\":\"2021-10-14\",\r\n    \"date_end\":\"2021-11-31\"\r\n  }\r\n]",
+                                "rules": [],
+                                "disableTemplating": false,
+                                "rulesOperator": "OR"
+                            }
+                        ],
+                        "enabled": true
+                    }
+                ],
+                "modifiedAt": "2020-10-15T14:35:59.852Z",
+                "proxyMode": false,
+                "proxyHost": "",
+                "https": false,
+                "cors": true,
+                "headers": [
+                    {
+                        "uuid": "bb54f101-0ef3-11eb-bcdc-d1372e51e654",
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "lastMigration": 12,
+                "proxyReqHeaders": [
+                    {
+                        "key": "",
+                        "value": ""
+                    }
+                ],
+                "proxyResHeaders": [
+                    {
+                        "key": "",
+                        "value": ""
+                    }
+                ]
+            }
+        }
+    ]
+}
