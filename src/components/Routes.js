@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Route, Router, Switch, Redirect } from "react-router-dom";
 import NotFound from "./NotFound";
 import Challenges from "./challenges/";
-import dummy from "./dummy";
+import LogEntries from "./logEntries";
 
 import history from "./History";
 
@@ -15,7 +15,7 @@ class Routes extends Component {
             <Redirect push to="/challenges" />
           </Route>
           <Route path="/challenges" exact component={Challenges} />
-          <Route path="/log" component={dummy} />
+          <Route path="/log" component={LogEntries} />
           <Route path="*">
             <NotFound />
           </Route>
