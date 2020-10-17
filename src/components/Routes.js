@@ -3,6 +3,8 @@ import { Route, Router, Switch, Redirect } from "react-router-dom";
 import NotFound from "./NotFound";
 import Challenges from "./challenges/";
 import LogEntries from "./logEntries";
+import LoginHooks from "./loginHooks";
+import LogoutHooks from "./logoutHooks";
 
 import history from "./History";
 
@@ -16,6 +18,8 @@ class Routes extends Component {
           </Route>
           <Route path="/challenges" exact component={Challenges} />
           <Route path="/log" component={LogEntries} />
+          <Route path="/login" component={LoginHooks} />
+          <Route path="/logout" component={LogoutHooks} />
           <Route path="*">
             <NotFound />
           </Route>

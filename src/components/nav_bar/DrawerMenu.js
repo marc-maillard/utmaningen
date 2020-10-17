@@ -27,6 +27,20 @@ function DrawerMenu(props) {
       icon: NoteAddIcon,
       iconColor: props.theme.palette.secondary.main,
     },
+    {
+      id: 3,
+      title: "Login",
+      route: "login",
+      icon: NoteAddIcon,
+      iconColor: props.theme.palette.secondary.main,
+    },
+    {
+      id: 4,
+      title: "Logout",
+      route: "logout",
+      icon: NoteAddIcon,
+      iconColor: props.theme.palette.secondary.main,
+    },
   ];
 
   return (
